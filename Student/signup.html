@@ -8,12 +8,15 @@
 </head>
 
 <body>
-    <p>Welcome To Our E-Learning System</p>
-    <div class="container">
-        <a href="Admin/login.html"><button type="button" class="btn btn-primary">Login as Admin</button></a>
-        <a href="Student/login.html"><button type="button" class="btn btn-primary">Login as Teacher</button></a>
-        <a href="Teacher/login.html"><button type="button" class="btn btn-primary">Login as Student</button></a>
-    </div>
+    <form action="./login.html" method="POST">
+        First Name : <input type="text" id="ufname">
+        Last Name : <input type="text" id="ulname">
+        Username : <input type="text" id="uname">
+        E-Mail : <input type="text" id="uemail">
+        Password : <input type="password" id="upass">
+        Confirm Password : <input type="password" id="uvaripass">
+        <input type="submit" id="signup" value="SignUp">
+    </form>
 </body>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
