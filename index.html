@@ -9,18 +9,48 @@
 </head>
 
 <body>
-    <div class="container">
-        <p>Welcome To Our E-Learning System</p>
-    </div>
-
-    <div class="container">
-        <a href="Admin/login.html"><button type="button" class="btn btn-primary">Login as Admin</button></a>
-        <a href="Student/login.html"><button type="button" class="btn btn-primary">Login as Teacher</button></a>
-        <a href="Teacher/login.html"><button type="button" class="btn btn-primary">Login as Student</button></a>
+    <p id="title">Welcome To Our E-Learning System</p>
+    <div class="form-grid">
+        <div class="login" id="admin-btn">
+            <p class="label"> Login As Admin</p>
+            <div class="form">
+                <form action="Admin/login.html" class="login-form" id="admin-form">
+                    <div class="username"><input type="text"></div>
+                    <div class="password"><input type="password"></div>
+                    <div class="submit"><button type="submit">Submit</button></div>
+                </form>
+            </div>
+        </div>
+        <div class="login" id="student-btn">
+            <p class="label"> Login As Student</p>
+            <div class="form">
+                <form action="Student/login.html" class="login-form" id="admin-form">
+                    <div class="username"><input type="text" id="uname"></div>
+                    <div class="password"><input type="password" id="upass"></div>
+                    <div class="submit"><button type="submit">Submit</button></div>
+                </form>
+            </div>
+        </div>
+        <div class="login" id="teacher-btn">
+            <p class="label"> Login As Teacher</p>
+            <div class="form">
+                <form action="Teacher/login.html" class="login-form" id="admin-form">
+                    <div class="username"><input type="text"></div>
+                    <div class="password"><input type="password"></div>
+                    <div class="submit"><button type="submit">Submit</button></div>
+                </form>
+            </div>
+        </div>
     </div>
 </body>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
     crossorigin="anonymous"></script>
