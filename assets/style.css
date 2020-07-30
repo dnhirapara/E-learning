@@ -32,19 +32,37 @@ div.login{
 .box-input input{
     border: none;
 }
+.box-input button{
+    text-align: center;
+    border: none;
+}
 .box-input{
     background-color: white;
     border: 5px solid black;
     align-content: center;
-    padding: 1px;
+    padding: 10px;
     border-radius: 25px;
     width: 25vh;
     height: 4vh;
 }
+.box-submit{
+    background-color: white;
+    border: 5px solid black;
+    align-content: center;
+    padding: 10px;
+    border-radius: 25px;
+    width: 10vh;
+    height: 4vh;
+}
 .form{
+
+    align-items: center;
+    align-self: center ;
+    align-content: center;
+    text-align: center;
     vertical-align:middle;
     opacity: 0;
-    transition: opacity 2s ease-out;
+    transition: opacity .5s ease-out;
 }
 .login:hover .form{
     opacity: 1;
@@ -52,10 +70,14 @@ div.login{
     animation: slide 10s;
     animation-delay: 10s; */
 }
-@keyframes slide{
+.box-input i{
+    float: left;
+    color: black;
+}
+/* @keyframes slide{
     from{opacity: 0;}
     to{opacity: 1;}
-}
+} */
 /* .login:hover .label{
     display: none;
 } */
