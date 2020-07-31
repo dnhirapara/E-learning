@@ -9,11 +9,14 @@ body {
     height: 100%;
 }
 .form-grid{
-    columns:20px 3;
-    margin: auto;
-    align-content: center;
+    /* columns:20px 3; */
+    display:inline-block;
+    margin: 20px;
+    /* margin: auto; */
+    /* align-content: center; */
 }
-div.login{
+div .login{
+    display:inline-block;
     border: 5px solid orange;
     box-shadow: 5px 10px;
     padding: 0em 1rem;
@@ -27,6 +30,7 @@ div.login{
 } */
 .login p{
     text-align: center;
+    padding: 20px;
     vertical-align: middle;
 }
 .box-input input{
@@ -54,7 +58,45 @@ div.login{
     width: 10vh;
     height: 4vh;
 }
-.form{
+i{
+    color: black;
+    float: left;
+}
+[type="text"]{
+    float: right;
+}
+/* .form:focus-within {
+    visibility: visible;
+    opacity: .95;
+  } */
+  .form{
+    width:30%;
+    float:center;
+    }
+  .login col-1{
+      position: absolute;
+      width: 100%;
+      top: 20%;
+      left: 20%;
+      translate: (-20%,-20%);
+  }
+  .login .form {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease-out;
+  }
+
+  .login:hover .form,
+  .form:focus-within {
+    visibility: visible;
+    opacity: .95;
+  }
+  /* .login:hover .label,
+  .label:focus-within {
+    visibility: visible;
+    opacity: .95;
+  } */
+/* .form{
 
     align-items: center;
     align-self: center ;
@@ -62,14 +104,16 @@ div.login{
     text-align: center;
     vertical-align:middle;
     opacity: 0;
+    -moz-transition: opacity .5s ease-out;
     transition: opacity .5s ease-out;
 }
-.login:hover .form{
+.form:hover,[autocomplete]:hover {
     opacity: 1;
     /* opacity: 1;
     animation: slide 10s;
-    animation-delay: 10s; */
+    animation-delay: 10s;
 }
+*/
 .box-input i{
     float: left;
     color: black;
@@ -81,11 +125,7 @@ div.login{
 /* .login:hover .label{
     display: none;
 } */
-.login:hover .label{
 
-opacity: 0;
-transition: opacity 1s ease-out;
-}
 /* #del:link{
     color: white;
 }

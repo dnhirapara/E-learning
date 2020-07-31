@@ -5,16 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/c85142f965.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
-        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/style.css">
     <title>E-Learning</title>
 </head>
 
 <body>
+    <!-- header -->
     <p id="title">Welcome To Our E-Learning System</p>
+    <!-- header start -->
+    <!-- login forms -->
     <div class="form-grid">
-        <div class="login" id="admin-btn">
+        <!-- student login form -->
+        <div class="login col-1" id="admin-btn">
             <p class="label"> Login As Admin</p>
             <div class="form">
                 <form action="Admin/login.html" class="login-form" id="admin-form">
@@ -26,22 +28,26 @@
                 </form>
             </div>
         </div>
-        <div class="login" id="student-btn">
+        <!-- admin lofin form end -->
+        <!-- student login form -->
+        <div class="login col-1" id="student-btn">
             <p class="label"> Login As Student</p>
             <div class="form">
-                <form action="Student/login.html" class="login-form" id="admin-form">
+                <form autocomplete="off" action="Student/login.html" class="login-form" id="admin-form">
                     <div class="box-input"><i class="fas fa-user"></i><input type="text" id="uname"
                             placeholder="Username"></div>
                     <div class="box-input"><i class="fas fa-key"></i><input type="password" id="upass"
                             placeholder="Password"></div>
-                    <div class="box-submit"><button type="submit">Submit</button></div>
+                    <div class="box-submit"><button>Submit</button></div>
                 </form>
             </div>
         </div>
-        <div class="login" id="teacher-btn">
+        <!-- student login form end -->
+        <!-- teacher login form -->
+        <div class="login col-1" id="teacher-btn">
             <p class="label"> Login As Teacher</p>
             <div class="form">
-                <form action="Teacher/login.html" class="login-form" id="admin-form">
+                <form autocomplete="off" action="Teacher/login.html" class="login-form" id="admin-form">
                     <div class="box-input"><i class="fas fa-user"></i><input type="text" id="uname"
                             placeholder="Username"></div>
                     <div class="box-input"><i class="fas fa-key"></i><input type="password" id="upass"
@@ -50,10 +56,15 @@
                 </form>
             </div>
         </div>
+        <!-- teacher login form end -->
     </div>
+    <!-- login forms end -->
 </body>
 
+<!-- footer -->
+<!-- footer end -->
 
+<!-- linking -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
@@ -63,5 +74,6 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
     crossorigin="anonymous"></script>
+<!-- linking end -->
 
 </html>
