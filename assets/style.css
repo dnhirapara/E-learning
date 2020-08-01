@@ -15,22 +15,27 @@ body {
     border-bottom: 5px solid orange;
 }
 .form-grid{
-    margin: 20px;
     position: relative;
+    margin: 20px;
+    /* background-color: aqua; */
     width: 900px;
     height: 500px;
-    margin: 100px auto;
+    margin: 50px auto;
+    align-items: center;
 }
 .form-grid .login-box{
+    top: 50%;
+    left: calc(50% - 310px);
+    transform: translate(-50%,-50%);
+    align-items: center;
+    /* margin: auto; */
     margin: 10px;
     position: relative;
     width: calc(300px - 30px);
     float: left;
     border: 5px solid orange;
-    /* box-shadow: 5px 10px; */
     border-radius: 25px;
     height: 400px;
-    /* overflow: hidden; */
 }
 .form-grid .login-box .icon{
     position: absolute;
@@ -48,7 +53,7 @@ body {
     text-align: center;
 }
 
-.form-grid .login-box:hover .icon{
+.form-grid .login-box:hover .icon,.form-grid .login-box:focus-within .icon{
     top: -40px;
     left: calc(50% - 40px);
     width: 80px;
@@ -64,34 +69,59 @@ body {
     transition: .5s;
     color: #000;
 }
-.form-grid .login-box:hover .icon .fas{
+.form-grid .login-box:hover .icon .fas,
+.form-grid .login-box:focus-within .icon .fas{
     font-size: 40px;
 }
-.form-grid .login-box .form{
+
+.form-box{
+    width: 250px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
     position: absolute;
-    height: 100%;
-    padding: 20px;
-    top: 100px;
-    box-sizing: border-box;
     text-align: center;
+}
+.form-box h1{
+    font-size: 20px;
+}
+.form-box .textbox{
+    position: relative;
+    width: 100%;
+    padding: 2px 0px;
+    margin: 20px 0;
+    border-bottom: 1px solid red;
     transition: .5s;
 }
-.form-box{
-    position: relative;
-    transform: translate(-50%,-50%);
-}
-.box-input{
-    display: inline-block;
-    width: 100px;
-    border: 2px solid white;
-    border-radius: 50px;
-    /* overflow: hidden; */
-    /* border-bottom:2px solid white ; */
-}
-
-input{
+.form-box input[type="text"],input[type="password"]{
+    width: 80%;
     border: none;
-    color: aqua;
+    top: 20px;
     outline: none;
+    color: yellow;
     background: none;
+    font-size: 15px;
+    transition: .5s;
+}
+.form-box .textbox:hover{
+    border-color: blue;
+}
+.textbox i{
+    width: 15px;
+    padding-left: 2px;
+    float: left;
+}
+.submit-btn .btn1{
+    width: 80px;
+    background-color:#60CFCA;
+    border-radius: 20px;
+    border-color: #206ed4;
+    color: black;
+    margin: 10px;
+    padding: 5px;
+    transition: .5s;
+}
+.submit-btn .btn1:hover{
+    width: 100px;
+    background-color:#206ed4;
 }

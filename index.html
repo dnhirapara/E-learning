@@ -15,61 +15,87 @@
     <!-- header start -->
     <!-- login forms -->
     <div class="form-grid">
-        <!-- student login form -->
+
+        <!-- admin login form -->
         <div class="login-box col-1" id="admin-btn">
-            <!-- <p class="label"> -->
-            <div class="icon"><i class="fas fa-user-shield"></i></div>
-            <!-- </p> -->
+
+            <div class="icon">
+                <i class="fas fa-user-shield"></i>
+            </div>
 
             <div class="form-box">
-                <form action="Admin/login.html" class="login-form" id="admin-form">
-                    <div class="box-input">
-                        <div class="input-icon"><i class="fas fa-user"></div></i>
-                        <div class="textbox"><input type="text" id="uname" placeholder="Username"></div>
+                <h1>Login As Admin</h1>
+                <form autocomplete="off" id="admin-form" action="Admin/home.html">
+                    <div class="textbox">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Username">
                     </div>
-                    <div class="box-input"><i class="fas fa-lock"></i><input type="password" id="upass"
-                            placeholder="Password"></div>
-                    <div class="box-submit"><button type="submit">Submit</button></div>
+                    <div class="textbox">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Password">
+                    </div>
+                    <div class="submit-btn">
+                        <input class="btn1" type="submit" value="Sign In">
+                    </div>
                 </form>
             </div>
+
         </div>
-        <!-- admin lofin form end -->
+        <!-- admin login form end -->
+
         <!-- student login form -->
         <div class="login-box col-1" id="student-btn">
-            <div class="icon"><i class="fas fa-user-graduate"></i></div>
+            <div class="icon">
+                <i class="fas fa-user-graduate"></i>
+                <!-- Or <i class="fas fa-user-tie"></i> -->
+            </div>
+
             <div class="form-box">
-                <form autocomplete="off" action="Student/login.html" class="login-form" id="admin-form">
-                    <div class="box-input">
-                        <div class="input-icon"><i class="fas fa-user"></div></i><input type="text" id="uname"
-                            placeholder="Username">
+                <h1>Login As Student</h1>
+                <form autocomplete="off" id="student-form" action="Student/home.html">
+                    <div class="textbox">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Username">
                     </div>
-                    <div class="box-input"><i class="fas fa-lock"></i><input type="password" id="upass"
-                            placeholder="Password"></div>
-                    <div class="box-submit"><button>Submit</button></div>
+                    <div class="textbox">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Password">
+                    </div>
+                    <div class="submit-btn">
+                        <input class="btn1" type="submit" value="Sign In">
+                    </div>
                 </form>
             </div>
+
         </div>
         <!-- student login form end -->
+
         <!-- teacher login form -->
         <div class="login-box col-1" id="teacher-btn">
             <div class="icon">
                 <i class="fas fa-chalkboard-teacher"></i>
-                <p class="box-title">Login As Teacher</p>
             </div>
 
             <div class="form-box">
-                <form autocomplete="off" action="Teacher/login.html" class="login-form" id="admin-form">
-                    <div class="box-input">
-                        <div class="input-icon"><i class="fas fa-user"></div></i><input type="text" id="uname"
-                            placeholder="Username">
+                <h1>Login As Teacher</h1>
+                <form autocomplete="off" id="teacher-form" action="Teacher/home.html">
+                    <div class="textbox">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Username">
                     </div>
-                    <div class="box-input"><i class="fas fa-lock"></i><input type="password" id="upass"
-                            placeholder="Password"></div>
-                    <div class="box-submit"><button type="submit">Submit</button></div>
+                    <div class="textbox">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Password">
+                    </div>
+                    <div class="submit-btn">
+                        <input class="btn1" type="submit" value="Sign In">
+                    </div>
                 </form>
             </div>
+
         </div>
         <!-- teacher login form end -->
+
     </div>
     <!-- login forms end -->
 </body>
@@ -78,7 +104,7 @@
 <!-- footer end -->
 
 <!-- linking -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+<!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
@@ -86,7 +112,7 @@
     crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-    crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script> -->
 <!-- linking end -->
 
 </html>
