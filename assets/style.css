@@ -15,47 +15,47 @@ body {
     border-bottom: 5px solid orange;
 }
 .form-grid{
-    /* display:inline-block; */
     margin: 20px;
     position: relative;
     width: 900px;
     height: 500px;
     margin: 100px auto;
-
-    overflow-y: hidden;
 }
-.form-grid .login{
+.form-grid .login-box{
     margin: 10px;
     position: relative;
     width: calc(300px - 30px);
     float: left;
     border: 5px solid orange;
-    box-shadow: 5px 10px;
+    /* box-shadow: 5px 10px; */
     border-radius: 25px;
     height: 400px;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
-.form-grid .login .icon{
+.form-grid .login-box .icon{
     position: absolute;
     top: 0;
     left: 0;
+    border-radius: 20px;
     width: 100%;
     background:#cf8b0e;
     height: 100%;
     transition: .5s;
     z-index: 1;
 }
+.icon{
+    position: absolute;
+    text-align: center;
+}
 
-.form-grid .login:hover .icon{
-    top: 20px;
-    /* left: 90px; */
+.form-grid .login-box:hover .icon{
+    top: -40px;
     left: calc(50% - 40px);
-    /* right: 90%; */
     width: 80px;
     height: 80px;
     border-radius: 50%;
 }
-.form-grid .login .icon .fas{
+.form-grid .login-box .icon .fas{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -64,10 +64,10 @@ body {
     transition: .5s;
     color: #000;
 }
-.form-grid .login:hover .icon .fas{
+.form-grid .login-box:hover .icon .fas{
     font-size: 40px;
 }
-.form-grid .login .form{
+.form-grid .login-box .form{
     position: absolute;
     height: 100%;
     padding: 20px;
@@ -76,76 +76,22 @@ body {
     text-align: center;
     transition: .5s;
 }
-/* .form-grid .login .form input{
-
-} */
-/* .login.label{  //not working
-    text-align: center;
-    vertical-align: middle;
-} */
-/* .login p{
-    text-align: center;
-    padding: 20px;
-    vertical-align: middle;
-}
-.box-input input{
-    border: none;
-}
-.box-input button{
-    text-align: center;
-    border: none;
+.form-box{
+    position: relative;
+    transform: translate(-50%,-50%);
 }
 .box-input{
-    background-color: white;
-    border: 5px solid black;
-    align-content: center;
-    padding: 10px;
-    border-radius: 25px;
-    width: 25vh;
-    height: 4vh;
+    display: inline-block;
+    width: 100px;
+    border: 2px solid white;
+    border-radius: 50px;
+    /* overflow: hidden; */
+    /* border-bottom:2px solid white ; */
 }
-.box-submit{
-    background-color: white;
-    border: 5px solid black;
-    align-content: center;
-    padding: 10px;
-    border-radius: 25px;
-    width: 10vh;
-    height: 4vh;
-}
-.icon i{
-    color: white;
-}
-i{
-    color: black;
-    float: left;
-}
-[type="text"]{
-    float: right;
-}
-  .form{
-    width:30%;
-    float:center;
-    }
-  .login col-1{
-      position: absolute;
-      width: 100%;
-      top: 20%;
-      left: 20%;
-      translate: (-20%,-20%);
-  }
-  .login .form {
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 1s ease-out;
-  }
 
-  .login:hover .form,
-  .form:focus-within {
-    visibility: visible;
-    opacity: .95;
-  }
-.box-input i{
-    float: left;
-    color: black;
-} */
+input{
+    border: none;
+    color: aqua;
+    outline: none;
+    background: none;
+}
