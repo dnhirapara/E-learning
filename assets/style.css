@@ -5,30 +5,85 @@ body {
     background-size: cover;
     color: #ffffff;
     font-size: 24px;
-    width: 100%;
-    height: 100%;
+}
+#title{
+    height: 50px;
+    padding-top: 20px;
+    vertical-align: middle;
+    margin: auto;
+    text-align: center;
+    border-bottom: 5px solid orange;
 }
 .form-grid{
-    /* columns:20px 3; */
-    display:inline-block;
+    /* display:inline-block; */
     margin: 20px;
-    /* margin: auto; */
-    /* align-content: center; */
+    position: relative;
+    width: 900px;
+    height: 500px;
+    margin: 100px auto;
+
+    overflow-y: hidden;
 }
-div .login{
-    display:inline-block;
+.form-grid .login{
+    margin: 10px;
+    position: relative;
+    width: calc(300px - 30px);
+    float: left;
     border: 5px solid orange;
     box-shadow: 5px 10px;
-    padding: 0em 1rem;
     border-radius: 25px;
     height: 400px;
-    width: 200px;
+    overflow: hidden;
 }
+.form-grid .login .icon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background:#cf8b0e;
+    height: 100%;
+    transition: .5s;
+    z-index: 1;
+}
+
+.form-grid .login:hover .icon{
+    top: 20px;
+    /* left: 90px; */
+    left: calc(50% - 40px);
+    /* right: 90%; */
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.form-grid .login .icon .fas{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 80px;
+    transition: .5s;
+    color: #000;
+}
+.form-grid .login:hover .icon .fas{
+    font-size: 40px;
+}
+.form-grid .login .form{
+    position: absolute;
+    height: 100%;
+    padding: 20px;
+    top: 100px;
+    box-sizing: border-box;
+    text-align: center;
+    transition: .5s;
+}
+/* .form-grid .login .form input{
+
+} */
 /* .login.label{  //not working
     text-align: center;
     vertical-align: middle;
 } */
-.login p{
+/* .login p{
     text-align: center;
     padding: 20px;
     vertical-align: middle;
@@ -58,6 +113,9 @@ div .login{
     width: 10vh;
     height: 4vh;
 }
+.icon i{
+    color: white;
+}
 i{
     color: black;
     float: left;
@@ -65,10 +123,6 @@ i{
 [type="text"]{
     float: right;
 }
-/* .form:focus-within {
-    visibility: visible;
-    opacity: .95;
-  } */
   .form{
     width:30%;
     float:center;
@@ -91,48 +145,7 @@ i{
     visibility: visible;
     opacity: .95;
   }
-  /* .login:hover .label,
-  .label:focus-within {
-    visibility: visible;
-    opacity: .95;
-  } */
-/* .form{
-
-    align-items: center;
-    align-self: center ;
-    align-content: center;
-    text-align: center;
-    vertical-align:middle;
-    opacity: 0;
-    -moz-transition: opacity .5s ease-out;
-    transition: opacity .5s ease-out;
-}
-.form:hover,[autocomplete]:hover {
-    opacity: 1;
-    /* opacity: 1;
-    animation: slide 10s;
-    animation-delay: 10s;
-}
-*/
 .box-input i{
     float: left;
     color: black;
-}
-/* @keyframes slide{
-    from{opacity: 0;}
-    to{opacity: 1;}
-} */
-/* .login:hover .label{
-    display: none;
-} */
-
-/* #del:link{
-    color: white;
-}
-#del:visited{
-    color: chocolate;
-}
-
-li::after{
-    color: greenyellow;
 } */
