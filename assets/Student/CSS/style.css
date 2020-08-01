@@ -6,6 +6,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
+/* nav bar */
 .logo{
     float: left;
 }
@@ -54,7 +55,9 @@ body{
 .nav-bar .btn1:hover{
     color:  #DAF7A6 ;
 }
+/* nav bar ends */
 
+/* side bar */
 .side-bar{
     /* position: relative; */
     top: 0;
@@ -73,8 +76,11 @@ body{
 .side-bar .user-name{
     text-align: center;
     margin-bottom: 20px;
+    font-size: 22px;
 }
 .side-bar .profile-img img{
+    padding: 8px;
+    background-color: #00001a;
     border: 1px solid white;
     width: 100px;
     height: 100px;
@@ -92,14 +98,27 @@ body{
     margin-bottom: 20px;
     text-align: start;
     box-sizing: border-box;
+    transition: .5s;
 }
 
 .side-bar .menu a .btn1:hover{
     background-color: #DAF7A6;
+    font-size: 25px;
 }
 
 .side-bar .menu a .btn1 .icon{
     float: left;
-    /* background-color: aqua; */
     margin-right: 10px;
+}
+/* side bar ends */
+
+.main-area{
+    position: absolute;
+    color: white;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+}
+.main-area .code-editor{
+    display: none;
 }
