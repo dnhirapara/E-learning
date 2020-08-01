@@ -1,0 +1,25 @@
+
+/* .nav-bar .btn1{
+    border: 5px solid white;
+    float: right;
+    margin: auto;
+    margin-right: 20px;
+} */
+
+.nav-right .btn1 i{
+    /* margin: calc(50% + 5px) auto; */
+    padding-left: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    margin-top: -20px;
+    transform: translate(-50%,-50%);
+    color: aqua;
+    font-size: 22px;
+    overflow: hidden;
+    transform: .5s;
+}
+
+.nav-right .btn1 i:hover{
+    font-size: 28px;
+    color: cadetblue;
+}
