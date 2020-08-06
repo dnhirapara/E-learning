@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/c85142f965.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../assets/Student/CSS/style.css">
+    <link rel="stylesheet" href="../assets/Student/CSS/assign_code.css">
     <title>E-Learning</title>
 </head>
 
@@ -41,6 +41,14 @@
         </div>
         <!-- </center> -->
         <div class="menu">
+            <a href="home.html">
+                <button class="btn1">
+                    <div class="icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    Home
+                </button>
+            </a>
             <a href="assignment.html">
                 <button class="btn1">
                     <div class="icon">
@@ -96,36 +104,28 @@
     <!-- Main area -->
     <div class="main-area">
         <div class="problem-defination">
-
+            <textarea></textarea>
         </div>
         <div class="code-editor">
-            Enter Your Code:
-            <div class="card">
-                <textarea></textarea>
-                <div class="card-footer">
-                    <div class="float-right">
-                        <button type="button" class="btn">Compile</button>
-                        <button type="button" class="btn">Run</button>
-                        <button type="button" class="btn">Submit</button>
+            <table>
+                <tr id="code-title"></tr>
+                <tr id="code-area">
+                    Enter Your Code:
+                    <div class="card">
+                        <textarea></textarea>
+
                     </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-header">
-                    Input:
-                </div>
-                <div class="card-body overflow-auto">
-                    <textarea></textarea>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-header">
-                    Output:
-                </div>
-                <div class="card-body overflow-auto">
-                    <textarea></textarea>
-                </div>
-            </div>
+                </tr>
+                <tr id="code-footer">
+                    <div class="card-footer">
+                        <div class="float-right">
+                            <button type="button" class="btn">Compile</button>
+                            <button type="button" class="btn">Run</button>
+                            <button type="button" class="btn">Submit</button>
+                        </div>
+                    </div>
+                </tr>
+            </table>
         </div>
     </div>
     <!-- Main area ends -->

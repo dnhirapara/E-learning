@@ -1,0 +1,19 @@
+@import url('style.css');
+
+.container .file-upload{
+    border-radius: 10px;
+    height: 40%;
+    width: 80%;
+    border-style: dotted;
+}
+.file-upload input{
+    text-decoration: none ;
+}
+.text-doc textarea{
+    width: 150px;
+    border-radius: 5px;
+}
+.text-doc{
+
+    box-shadow: 6px white;
+}
