@@ -104,10 +104,10 @@
     <!-- Main area -->
     <div class="main-area">
         <div class="dir-button">
-            <button id="go-back">
+            <button id="go-back" onclick="window.history.back()">
                 <i class="fas fa-arrow-circle-left"></i>
             </button>
-            <button id="go-forward">
+            <button id="go-forward" onclick="window.history.forward()">
                 <i class="fas fa-arrow-circle-right"></i>
             </button>
         </div>
@@ -116,11 +116,9 @@
         </div> -->
         <div class="code-editor">
             <table>
-                <tr id="code-title">
-                    <p>hello</p>
-                    <div class="trial">
-                        <p>hello</p>
-                        <!-- <p>Addtition <span>Subject : <strong>Maths</strong></span></p> -->
+                <tr>
+                    <div id="code-title">
+                        <p>Addtition <span>Subject : <strong>Maths</strong></span></p>
                         <div class="code-language">
                             <select id="language" onchange="fun">
                                 <option value="cpp">c++</option>

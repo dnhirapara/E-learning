@@ -1,15 +1,17 @@
 @import url('style.css');
 
 .code-editor{
-    --width: 550px;
-    --height: 450px;
+    --width: 950px;
+    --height: 500px;
     overflow: hidden;
     background-color: aqua;
+    border-radius: 10px;
     position: relative;
     width: var(--width);
     height: var(--height);
     left: calc( 50% - calc(var(--width) / 2));
-    top: calc(50% - calc(var(--height) / 2));
+    /* top: calc(50% - calc(var(--height) / 2)); */
+    top: 5px;
     /* box-sizing: border-box; */
     /* border: 5px solid red; */
     /* border-radius: 5px; */
@@ -45,16 +47,39 @@
     transform: scale(1.25);
 }
 textarea{
-    width: 650px;
+    border: 2px solid black;
+    position: relative;
+    width: 900px;
+    resize: vertical;
+    z-index: 2;
+    /* border-radius: 5px; */
+    left: 50%;
+    transform: translateX(-50%);
     height: 350px;
 }
 
-#code-title p{
-    background-color: #000;
-    display: inline;
+#code-title{
+    margin: 10px;
 }
-.trial .code-language{
+
+#code-title p{
+    display: inline;
+    margin: 5px;
+}
+#code-title p span::before{
+    content: '';
+    margin-top: 5px;
+    height: 2px;
+    border-left: 2px solid black;
+    border-inline-start-color: palevioletred;
+    padding: 5px;
+}
+.code-language{
     float: right;
+    border-radius: 5px;
+}
+.code-language select{
+    border-radius: 5px;
 }
 .submit-button{
     float: right;

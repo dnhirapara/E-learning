@@ -93,6 +93,7 @@ body{
 .side-bar .profile-img img{
     background-color: #00001a;
     border: 1px solid white;
+    padding: 5px;
     width: 100px;
     height: 100px;
     margin-bottom: 10px;
@@ -141,4 +142,30 @@ body{
     /* margin-top: 20px;
     top: 50%;
     left: 50%; */
+}
+
+.dir-button{
+    position: relative;
+    margin: 10px;
+}
+#go-back{
+    background-color: transparent;
+    border: none;
+    color: black;
+    font-size: 22px;
+    transition: .5s ease-out;
+}
+#go-forward{
+    background-color: transparent;
+    border: none;
+    color: black;
+    font-size: 22px;
+    float: right;
+    transition: .5s ease-out;
+}
+#go-forward:hover{
+    transform: scale(1.25);
+}
+#go-back:hover{
+    transform: scale(1.25);
 }
