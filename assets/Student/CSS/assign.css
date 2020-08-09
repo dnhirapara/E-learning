@@ -1,9 +1,59 @@
 @import url('style.css');
+.sub-table{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    /* background-color: aqua; */
+    transform: translate(-50%,-50%);
+    padding: 10px;
+}
 table{
+    margin: 10px;
+    --width : 900px;
+    --height : 500px;
+    text-transform: capitalize;
+    position: relative;
+    color: black;
+    border-radius: 10px 10px;
+    border-spacing: 0;
+    width: var(--width);
+    /* height: var(--height); */
+    /* background-color: blueviolet; */
     margin: 0;
     padding: 0;
 }
+tr.row-title{
+    text-transform: uppercase;
+}
+.row{
+    border-bottom: 2px solid black;
+}
+td{
+    margin: 0;
+    padding: 10px;
+    /* height: 30px; */
+    text-align: center;
+}
+.btn a button{
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    background:none;
+    transition: .5s ease-out;
+}
+.btn a button:hover{
+    background-color: greenyellow;
+    box-shadow: green;
+}
+/* th, td {
+    text-align: left;
+    padding: 8px;
+  }
+
+  tr:nth-child(even){background-color: #f2f2f2} */
 tr.row:hover
 {
     background-color: rgba(125, 126, 224, .5);
+    height: 50px;
 }

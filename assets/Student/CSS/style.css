@@ -133,7 +133,7 @@ body{
     position: absolute;
     color: white;
     background-color: #DAF7A6;
-    overflow: hidden;
+    /* overflow-x: hidden; */
     width: calc(100% - 250px);
     height: calc(100% - 70px);
     /* transform: translate(-50%    ,-50%); */

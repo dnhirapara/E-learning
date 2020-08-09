@@ -112,13 +112,15 @@
             </button>
         </div>
         <div class="sub-table">
-            <table>
+            <table id="assign-table">
                 <tr class="row-title">
                     <th id="id-title" class="ids">Id</th>
                     <th id="sub-title" class="courses">Course</th>
                     <th id="ass-title" class="assignments">Assignment</th>
                     <th id="sta-title" class="start-times">Start Time</th>
                     <th id="end-title" class="end-times">End Time</th>
+                    <th id="assign-status">Status</th>
+                    <th id="assign-btn">Submit</th>
                 </tr>
                 <tr class="row">
                     <td>
@@ -136,6 +138,48 @@
                     <td>
                         <div id="etime" class="end-times">03/01/2020</div>
                     </td>
+                    <td>
+                        <div id="status">
+                            completed
+                        </div>
+                    </td>
+                    <td>
+                        <div id="code-btn" class="btn">
+                            <a href="assign_code.html">
+                                <button>Code</button>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr class="row">
+                    <td>
+                        <div id="id" class="ids">1</div>
+                    </td>
+                    <td>
+                        <div id="course" class="courses">Maths</div>
+                    </td>
+                    <td>
+                        <div id="assignment-title" class="assignments">code</div>
+                    </td>
+                    <td>
+                        <div id="stime" class="start-times">12/06/2020</div>
+                    </td>
+                    <td>
+                        <div id="etime" class="end-times">03/01/2020</div>
+                    </td>
+
+                    <td>
+                        <div id="status">
+                            completed
+                        </div>
+                    </td>
+                    <td>
+                        <div id="code-btn" class="btn">
+                            <a href="assign_code.html">
+                                <button>Code</button>
+                            </a>
+                        </div>
+                    </td>
                 </tr>
             </table>
         </div>
@@ -144,6 +188,7 @@
     </div>
     <!-- Main area ends -->
 </body>
+<script src="../assets/Student/JS/assign.js"></script>
 <!-- linking -->
 <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

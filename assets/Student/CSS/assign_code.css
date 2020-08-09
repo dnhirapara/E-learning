@@ -10,14 +10,7 @@
     width: var(--width);
     height: var(--height);
     left: calc( 50% - calc(var(--width) / 2));
-    /* top: calc(50% - calc(var(--height) / 2)); */
     top: 5px;
-    /* box-sizing: border-box; */
-    /* border: 5px solid red; */
-    /* border-radius: 5px; */
-    /* transform: translate(-50%,-50%);
-    top: calc( 50% + 100px);
-    left: calc( 50% + 250px); */
     color: black;
     background-color: whitesmoke;
 }
@@ -52,7 +45,6 @@ textarea{
     width: 900px;
     resize: vertical;
     z-index: 2;
-    /* border-radius: 5px; */
     left: 50%;
     transform: translateX(-50%);
     height: 350px;

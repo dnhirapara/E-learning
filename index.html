@@ -28,14 +28,14 @@
                 <form autocomplete="off" id="admin-form" action="Admin/home.html">
                     <div class="textbox">
                         <i class="fas fa-user"></i>
-                        <input type="text" placeholder="Username">
+                        <input type="text" name="uname_admin" placeholder="Username">
                     </div>
                     <div class="textbox">
                         <i class="fas fa-lock"></i>
-                        <input type="password" placeholder="Password">
+                        <input type="password" name="pass_admin" placeholder="Password">
                     </div>
                     <div class="submit-btn">
-                        <input class="btn1" type="submit" value="Sign In">
+                        <input class="btn1" type="submit" disabled="disabled" name="submit_admin" value="Sign In">
                     </div>
                 </form>
             </div>
@@ -55,14 +55,14 @@
                 <form autocomplete="off" id="student-form" action="Student/home.html">
                     <div class="textbox">
                         <i class="fas fa-user"></i>
-                        <input type="text" placeholder="Username">
+                        <input type="text" name="uname_student" placeholder="Username">
                     </div>
                     <div class="textbox">
                         <i class="fas fa-lock"></i>
-                        <input type="password" placeholder="Password">
+                        <input type="password" name="pass_student" placeholder="Password">
                     </div>
                     <div class="submit-btn">
-                        <input class="btn1" type="submit" value="Sign In">
+                        <input class="btn1" type="submit" disabled="disabled" name="submit_student" value="Sign In">
                     </div>
                 </form>
             </div>
@@ -81,14 +81,14 @@
                 <form autocomplete="off" id="teacher-form" action="Teacher/home.html">
                     <div class="textbox">
                         <i class="fas fa-user"></i>
-                        <input type="text" placeholder="Username">
+                        <input type="text" name="uname_teacher" placeholder="Username">
                     </div>
                     <div class="textbox">
                         <i class="fas fa-lock"></i>
-                        <input type="password" placeholder="Password">
+                        <input type="password" name="pass_teacher" placeholder="Password">
                     </div>
                     <div class="submit-btn">
-                        <input class="btn1" type="submit" value="Sign In">
+                        <input class="btn1" type="submit" disabled="disabled" name="submit_teacher" value="Sign In">
                     </div>
                 </form>
             </div>
@@ -104,6 +104,7 @@
 <!-- footer end -->
 
 <!-- linking -->
+<script src="assets/index.js"></script>
 <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
