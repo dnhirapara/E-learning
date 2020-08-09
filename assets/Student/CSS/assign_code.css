@@ -1,2 +1,61 @@
 @import url('style.css');
 
+.code-editor{
+    --width: 550px;
+    --height: 450px;
+    overflow: hidden;
+    background-color: aqua;
+    position: relative;
+    width: var(--width);
+    height: var(--height);
+    left: calc( 50% - calc(var(--width) / 2));
+    top: calc(50% - calc(var(--height) / 2));
+    /* box-sizing: border-box; */
+    /* border: 5px solid red; */
+    /* border-radius: 5px; */
+    /* transform: translate(-50%,-50%);
+    top: calc( 50% + 100px);
+    left: calc( 50% + 250px); */
+    color: black;
+    background-color: whitesmoke;
+}
+.dir-button{
+    position: relative;
+    margin: 10px;
+}
+#go-back{
+    background-color: transparent;
+    border: none;
+    color: black;
+    font-size: 22px;
+    transition: .5s ease-out;
+}
+#go-forward{
+    background-color: transparent;
+    border: none;
+    color: black;
+    font-size: 22px;
+    float: right;
+    transition: .5s ease-out;
+}
+#go-forward:hover{
+    transform: scale(1.25);
+}
+#go-back:hover{
+    transform: scale(1.25);
+}
+textarea{
+    width: 650px;
+    height: 350px;
+}
+
+#code-title p{
+    background-color: #000;
+    display: inline;
+}
+.trial .code-language{
+    float: right;
+}
+.submit-button{
+    float: right;
+}

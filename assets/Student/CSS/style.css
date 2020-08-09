@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
     padding: 0;
     margin: 0;
@@ -21,7 +25,7 @@ body{
 
 .nav-bar .logo h3{
     margin: 0;
-    color: #581845;
+    color:white;
     text-transform: uppercase;
     font-size: 22px;
     font-weight: 900;
@@ -82,11 +86,11 @@ body{
 }
 .side-bar .user-name{
     text-align: center;
+    color: aliceblue;
     margin-bottom: 20px;
     font-size: 22px;
 }
 .side-bar .profile-img img{
-    padding: 8px;
     background-color: #00001a;
     border: 1px solid white;
     width: 100px;
@@ -103,15 +107,19 @@ body{
     margin: 10px;
     height: 50px;
     margin-bottom: 10px;
-    border-radius:10px 5px;
+    border-radius:10px;
     text-align: start;
+    padding-left: 10px;
     box-sizing: border-box;
     transition: .5s;
 }
 
 .side-bar .menu a .btn1:hover{
     background-color: #DAF7A6;
-    font-size: 25px;
+    /* font-size: 25px; */
+    transform: scale(1.05);
+    /* box-shadow: 5px 6px darkkhaki; */
+    /* box-shadow:    3px 3px 5px 10px #ccc; */
 }
 
 .side-bar .menu a .btn1 .icon{
@@ -123,7 +131,14 @@ body{
 .main-area{
     position: absolute;
     color: white;
-    transform: translate(-50%,-50%);
+    background-color: #DAF7A6;
+    overflow: hidden;
+    width: calc(100% - 250px);
+    height: calc(100% - 70px);
+    /* transform: translate(-50%    ,-50%); */
+    top: 70px;
+    left: 250px;
+    /* margin-top: 20px;
     top: 50%;
-    left: 50%;
+    left: 50%; */
 }

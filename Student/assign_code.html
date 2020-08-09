@@ -103,23 +103,41 @@
 
     <!-- Main area -->
     <div class="main-area">
-        <div class="problem-defination">
-            <textarea></textarea>
+        <div class="dir-button">
+            <button id="go-back">
+                <i class="fas fa-arrow-circle-left"></i>
+            </button>
+            <button id="go-forward">
+                <i class="fas fa-arrow-circle-right"></i>
+            </button>
         </div>
+        <!-- <div class="problem-defination">
+            <textarea></textarea>
+        </div> -->
         <div class="code-editor">
             <table>
-                <tr id="code-title"></tr>
+                <tr id="code-title">
+                    <p>hello</p>
+                    <div class="trial">
+                        <p>hello</p>
+                        <!-- <p>Addtition <span>Subject : <strong>Maths</strong></span></p> -->
+                        <div class="code-language">
+                            <select id="language" onchange="fun">
+                                <option value="cpp">c++</option>
+                                <option value="py">python</option>
+                                <option value="java">java</option>
+                            </select>
+                        </div>
+                    </div>
+                </tr>
                 <tr id="code-area">
-                    Enter Your Code:
                     <div class="card">
                         <textarea></textarea>
-
                     </div>
                 </tr>
                 <tr id="code-footer">
                     <div class="card-footer">
-                        <div class="float-right">
-                            <button type="button" class="btn">Compile</button>
+                        <div class="submit-button">
                             <button type="button" class="btn">Run</button>
                             <button type="button" class="btn">Submit</button>
                         </div>
@@ -130,6 +148,8 @@
     </div>
     <!-- Main area ends -->
 </body>
+
+<script src="../assets/Student/JS/assign_code.js"></script>
 <!-- linking -->
 <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
