@@ -25,7 +25,7 @@
 
             <div class="form-box">
                 <h1>Login As Admin</h1>
-                <form autocomplete="off" id="admin-form" action="Admin/home.html">
+                <form autocomplete="off" id="admin-form" action="Admin/home.html" onsubmit="return validateAdmin()">
                     <div class="textbox">
                         <i class="fas fa-user"></i>
                         <input type="text" name="uname_admin" placeholder="Username">
@@ -52,7 +52,8 @@
 
             <div class="form-box">
                 <h1>Login As Student</h1>
-                <form autocomplete="off" id="student-form" action="Student/home.html">
+                <form autocomplete="off" id="student-form" action="Student/home.html"
+                    onsubmit="return validateStudent()">
                     <div class="textbox">
                         <i class="fas fa-user"></i>
                         <input type="text" name="uname_student" placeholder="Username">
@@ -78,7 +79,8 @@
 
             <div class="form-box">
                 <h1>Login As Teacher</h1>
-                <form autocomplete="off" id="teacher-form" action="Teacher/home.html">
+                <form autocomplete="off" id="teacher-form" action="Teacher/home.html"
+                    onsubmit="return validateTeacher()">
                     <div class="textbox">
                         <i class="fas fa-user"></i>
                         <input type="text" name="uname_teacher" placeholder="Username">
