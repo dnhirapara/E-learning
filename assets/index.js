@@ -52,7 +52,7 @@ function validateTeacher() {
         window.alert("Please fill password!!!");
         return false;
     } else if (teacher_pass.length < 8) {
-        window.alert("Password must be more than equal to e characters.!!!");
+        window.alert("Password must be more than equal to 8 characters.!!!");
         return false;
     }
     return true;
