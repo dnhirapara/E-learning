@@ -84,14 +84,14 @@ body {
     text-align: center;
 }
 .form-box h1{
-    font-size: 20px;
+    font-size: 30px;
 }
 .form-box .textbox{
     position: relative;
     width: 100%;
     padding: 2px 0px;
-    margin: 20px 0;
-    border-bottom: 1px solid red;
+    margin: 40px 0;
+    border-bottom: 2px solid goldenrod;
     transition: .5s;
 }
 .form-box input[type="text"],input[type="password"]{
@@ -99,9 +99,9 @@ body {
     border: none;
     top: 20px;
     outline: none;
-    color: yellow;
+    color: orange;
     background: none;
-    font-size: 15px;
+    font-size: 25px;
     transition: .5s;
 }
 .form-box .textbox:hover{
@@ -112,17 +112,23 @@ body {
     padding-left: 2px;
     float: left;
 }
+.form-box .textbox:focus-within i{
+    color: blue;
+}
 .submit-btn .btn1{
-    width: 80px;
-    background-color:#60CFCA;
+    /* width: 80px; */
+    box-sizing: border-box;
+    font-size: 22px;
+    background-color:#cf8b0e;
+    border: 1px solid orange;
     border-radius: 20px;
-    border-color: #206ed4;
+    /* border-color: orange; */
     color: black;
     margin: 10px;
-    padding: 5px;
+    padding: 10px;
     transition: .5s;
 }
 .submit-btn .btn1:hover{
-    width: 100px;
-    background-color:#206ed4;
+    box-shadow: 0px 0px 32px 8px rgb(18, 20, 20), 0px 0px 4px 1px rgb(18, 20, 20) inset;
+    background-color:#cf8b0e;
 }
