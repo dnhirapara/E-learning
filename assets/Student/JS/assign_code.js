@@ -1,1 +1,1 @@
-// var asd = document.getElementById("code-title").innerHTML = "hello";
+var asd = document.getElementById("id_codeEditor").innerHTML = "hello";

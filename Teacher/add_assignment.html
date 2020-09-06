@@ -4,23 +4,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/c85142f965.js" crossorigin="anonymous"></script>
     <title>E-Learning</title>
+    <!-- fontawsome -->
+    <script src="https://kit.fontawesome.com/c85142f965.js" crossorigin="anonymous"></script>
+    <!-- fontawsome end -->
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <!-- bootstrap end -->
+    <!-- ckeditor -->
+    <script src="//cdn.ckeditor.com/4.14.1/standard/ckeditor.js"></script>
+    <!-- ckeditor -->
+
 </head>
 
 <body>
-    Assignment Name : <input type="text" name="assignName" id="asignment-name">
-    Type : <input type="text" name="assignType" id="assignment-type">
-    Last Date : <input type="date" name="assignLastDate" id="assignment-lastDate">
-    <input type="submit" value="submit">
+    <div e-learning-include-html="navbar.html"></div>
+    <form class="mx-auto text-center w-75 m-1">
+        <div class="form-group ">
+            <label for="id_assignName" class="sr-only">Assignment</label>
+            <input type="text" class="form-control" id="id_assignName" name="assignName" placeholder="Assignment Name"
+                aria-describedby="">
+            <div class="valid-feedback"></div>
+            <div class="invalid-feedback"></div>
+        </div>
+        <div class="form-group ">
+            <label for="id_assignType" class=" sr-only">Assignment Type</label>
+            <select id="id_assignType" class="form-control">
+                <option value="" disabled selected>Assignment Type</option>
+                <option value="code">Code</option>
+                <option value="document">Document</option>
+            </select>
+            <div class="valid-feedback"></div>
+            <div class="invalid-feedback"></div>
+        </div>
+        <div class="form-group ">
+            <label for="id_assignDesc" class="sr-only">Description</label>
+            <!-- <div id="id_assignDesc"></div> -->
+            <div class="card p-0">
+                <div class="card-header">
+                    Description
+                </div>
+                <div class="card-body p-0">
+                    <textarea id="id_assignDesc" class="form-control input"
+                        placeholder="Write Assignment Description Here..."></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="id_assignLastDate" class="sr-only">Due Date:</label>
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">Due Date:</div>
+                </div>
+                <input type="date" id="id_assignLastDate" class="form-control" placeholder="Enter Due Date">
+            </div>
+            <div class="valid-feedback"></div>
+            <div class="invalid-feedback"></div>
+        </div>
+        <div class="form-group">
+            <label for="id_assignFormat" class="sr-only sr-only-focusable">Add comma seperated assignment format</label>
+            <input class="form-control" id="id_assignFormat" placeholder="Add comma seperated assignment format">
+        </div>
+        <button type="submit" class="btn btn-outline-primary">Add Assignment</button>
+    </form>
 </body>
-
-<!-- linking -->
-<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-    crossorigin="anonymous"></script> -->
-<!-- linking end -->
+<script src="../assets/Teacher/index.js"></script>
+<script>
+    includeHTML();
+</script>
 
 </html>

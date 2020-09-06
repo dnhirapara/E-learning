@@ -10,6 +10,8 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+
 /* nav bar */
 .logo{
     float: left;
@@ -29,6 +31,22 @@ body{
     text-transform: uppercase;
     font-size: 22px;
     font-weight: 900;
+}
+
+.nav-bar .nav-btn{
+    /* background-color: aquamarine; */
+    background: none;
+    border: none;
+    position: absolute;
+    font-size: 22px;
+    /* margin: 10px; */
+    margin-top: calc(-30px);
+    left: 200px;
+    /* float: right; */
+    transition: .5s ease-out;
+}
+.nav-btn:hover{
+    color: #DAF7A6;
 }
 
 
@@ -62,6 +80,7 @@ body{
 /* nav bar ends */
 
 /* side bar */
+
 .side-bar{
     position: absolute;
     background-color: #581845;
@@ -69,17 +88,11 @@ body{
     padding-top: 40px;
     position: fixed;
     width: 250px;
+    z-index: 1;
+    /* display: none; */
     height: 100%;
 }
-.side-bar .menu-btn{
-    position: relative;
-    margin: 10px;
-    margin-top: -30px;
-    float: right;
-}
-.side-bar .menu-btn:hover{
-    display: none;
-}
+
 .side-bar .profile-img{
     position: relative;
     left: calc(50% - 50px);
@@ -133,12 +146,14 @@ body{
     position: absolute;
     color: white;
     background-color: #DAF7A6;
-    /* overflow-x: hidden; */
+    /* overflow: hidden; */
     width: calc(100% - 250px);
     height: calc(100% - 70px);
     /* transform: translate(-50%    ,-50%); */
     top: 70px;
-    left: 250px;
+    left:250px;
+    transition-property: all;
+    transition: .5s;
     /* margin-top: 20px;
     top: 50%;
     left: 50%; */
