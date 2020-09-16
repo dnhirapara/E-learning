@@ -8,6 +8,22 @@
     padding: 5px;
 }
 
+.box-header {
+    background-color: cadetblue;
+    padding: 20px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.box-right {
+    float: right;
+}
+
+.box-body {
+    padding: 20px;
+    background-color: blueviolet;
+    border-radius: 0px 0px 20px 20px;
+}
+
 .container .file-upload {
     border-radius: 10px;
     height: 40%;
@@ -17,6 +33,12 @@
 
 .file-upload input {
     text-decoration: none;
+}
+
+input[type="file"] {
+    /* display: none; */
+    text-decoration: none;
+    margin: 10px;
 }
 
 .text-doc textarea {

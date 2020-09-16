@@ -36,12 +36,8 @@
             <!-- <i class="fas fa-bars"></i> -->
         </div>
         <div class="nav-right">
-            <a href="profile.html"><button class="btn1">
-                    <i class="fas fa-user-circle"></i>
-                </button></a>
-            <a href="logout.html"><button class="btn1">
-                    <i class="fas fa-sign-out-alt"></i>
-                </button></a>
+            <a href="profile.html"><button class="btn1"><i class="fas fa-user-circle"></i></button></a>
+            <a href="logout.html"><button class="btn1"><i class="fas fa-sign-out-alt"></i></button></a>
         </div>
     </div>
     <!-- nav-bar ends -->
@@ -138,19 +134,21 @@
                 </div>
             </div>
         </div> -->
-        <table id="id_subTable">
-            <thead>
-                <tr>
-                    <td>Id</td>
-                    <td>Subject</td>
-                    <td>Faculty</td>
-                    <td>Complete</td>
-                </tr>
-            </thead>
-            <tbody id="id_subTableBody">
+        <div class="subTable">
+            <table id="id_subTable" class="sticky-header">
+                <thead>
+                    <tr>
+                        <td>Id</td>
+                        <td>Subject</td>
+                        <td>Faculty</td>
+                        <td>Complete</td>
+                    </tr>
+                </thead>
+                <tbody id="id_subTableBody">
 
-            </tbody>
-        </table>
+                </tbody>
+            </table>
+        </div>
     </div>
     <!-- Main area ends -->
 
