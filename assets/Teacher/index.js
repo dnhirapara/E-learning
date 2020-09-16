@@ -35,6 +35,6 @@ function includeHTML() {
 }
 
 /* ckeditor */
-editor = document.getElementById("id_assignDesc");
-CKEDITOR.replace("id_assignDesc");
+// editor = document.getElementById("id_assignDesc");
+// CKEDITOR.replace("id_assignDesc");
 /* ckeditor */

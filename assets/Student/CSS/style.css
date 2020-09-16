@@ -1,8 +1,9 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     padding: 0;
     margin: 0;
     background-color: #00001a;
@@ -13,48 +14,47 @@ body{
 
 
 /* nav bar */
-.logo{
+.logo {
     float: left;
 }
-.nav-bar{
+
+.nav-bar {
     position: fixed;
-    background-color: rgba( 255, 87, 51 , .5);
+    background-color: rgba(255, 87, 51, .5);
     width: 100%;
     padding: 20px;
     height: 30px;
     display: inline-block;
 }
 
-.nav-bar .logo h3{
-    margin: 0;
-    color:white;
+.nav-bar .logo h3 {
+    color: white;
     text-transform: uppercase;
     font-size: 22px;
+    padding-left: 20px;
     font-weight: 900;
 }
 
-.nav-bar .nav-btn{
+#id_closeBtn {
     /* background-color: aquamarine; */
     background: none;
     border: none;
     position: absolute;
     font-size: 22px;
-    /* margin: 10px; */
-    margin-top: calc(-30px);
-    left: 200px;
-    /* float: right; */
+    float: left;
     transition: .5s ease-out;
 }
-.nav-btn:hover{
+
+.nav-btn:hover {
     color: #DAF7A6;
 }
 
 
-.nav-bar .nav-right{
-    background:none;
+.nav-bar .nav-right {
+    background: none;
     margin-right: 30px;
     padding: 5px;
-    border-radius:2px ;
+    border-radius: 2px;
     text-decoration: none;
     float: right;
     border: none;
@@ -62,7 +62,7 @@ body{
 }
 
 
-.nav-bar .btn1{
+.nav-bar .btn1 {
     top: 0px;
     padding-left: 5px;
     margin: 0;
@@ -71,64 +71,72 @@ body{
     transition: .5s;
 }
 
-.nav-bar .btn1 i{
+.nav-bar .btn1 i {
     font-size: 28px;
 }
-.nav-bar .btn1:hover{
-    color:  #DAF7A6 ;
+
+.nav-bar .btn1:hover {
+    color: #DAF7A6;
 }
+
 /* nav bar ends */
 
 /* side bar */
 
-.side-bar{
+.side-bar {
     position: absolute;
     background-color: #581845;
     margin-top: 70px;
     padding-top: 40px;
+    /* padding-bottom: 60px; */
     position: fixed;
     width: 250px;
     z-index: 1;
     /* display: none; */
-    height: 100%;
+    border-radius: 30px 30px 30px 30px;
+    height: 100%
 }
 
-.side-bar .profile-img{
+.side-bar .profile-img {
     position: relative;
     left: calc(50% - 50px);
 }
-.side-bar .user-name{
+
+.side-bar .user-name {
     text-align: center;
     color: aliceblue;
     margin-bottom: 20px;
     font-size: 22px;
 }
-.side-bar .profile-img img{
+
+.side-bar .profile-img img {
     background-color: #00001a;
     border: 1px solid white;
     padding: 5px;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     margin-bottom: 10px;
     border-radius: 50%;
 }
-.side-bar .menu a{
+
+.side-bar .menu a {
     text-decoration: none;
 }
-.side-bar .menu a .btn1{
+
+.side-bar .menu a .btn1 {
     display: block;
     width: calc(100% - 20px);
     margin: 10px;
     height: 50px;
     margin-bottom: 10px;
-    border-radius:10px;
+    border-radius: 10px;
     text-align: start;
     padding-left: 10px;
     box-sizing: border-box;
     transition: .5s;
 }
 
-.side-bar .menu a .btn1:hover{
+.side-bar .menu a .btn1:hover {
     background-color: #DAF7A6;
     /* font-size: 25px; */
     transform: scale(1.05);
@@ -136,22 +144,26 @@ body{
     /* box-shadow:    3px 3px 5px 10px #ccc; */
 }
 
-.side-bar .menu a .btn1 .icon{
+.side-bar .menu a .btn1 .icon {
     float: left;
     margin-right: 10px;
 }
+
 /* side bar ends */
 
-.main-area{
+.main-area {
     position: absolute;
-    color: white;
+    color: #581845;
+    /* z-index: -1; */
+    overflow: scroll;
+    overflow-x: hidden;
     background-color: #DAF7A6;
     /* overflow: hidden; */
     width: calc(100% - 250px);
     height: calc(100% - 70px);
     /* transform: translate(-50%    ,-50%); */
     top: 70px;
-    left:250px;
+    left: 250px;
     transition-property: all;
     transition: .5s;
     /* margin-top: 20px;
@@ -159,18 +171,21 @@ body{
     left: 50%; */
 }
 
-.dir-button{
-    position: relative;
+.dir-button {
+    position: static;
+    /* display: inline-flex; */
     margin: 10px;
 }
-#go-back{
+
+#go-back {
     background-color: transparent;
     border: none;
     color: black;
     font-size: 22px;
     transition: .5s ease-out;
 }
-#go-forward{
+
+#go-forward {
     background-color: transparent;
     border: none;
     color: black;
@@ -178,9 +193,11 @@ body{
     float: right;
     transition: .5s ease-out;
 }
-#go-forward:hover{
+
+#go-forward:hover {
     transform: scale(1.25);
 }
-#go-back:hover{
+
+#go-back:hover {
     transform: scale(1.25);
 }
