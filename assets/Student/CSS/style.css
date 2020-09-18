@@ -36,7 +36,6 @@ body {
 }
 
 #id_closeBtn {
-    /* background-color: aquamarine; */
     background: none;
     border: none;
     position: absolute;
@@ -88,28 +87,30 @@ body {
     background-color: #581845;
     margin-top: 70px;
     padding-top: 40px;
-    /* padding-bottom: 60px; */
     position: fixed;
     width: 250px;
     z-index: 1;
-    /* display: none; */
-    border-radius: 30px 30px 30px 30px;
+    /* border-radius: 30px 30px 30px 30px; */
     height: 100%
 }
 
 .side-bar .profile-img {
     position: relative;
-    left: calc(50% - 50px);
+    left: calc(50% - 40px);
 }
 
 .side-bar .user-name {
+    position: relative;
     text-align: center;
+    /* left: 50%; */
+    /* margin: auto; */
     color: aliceblue;
     margin-bottom: 20px;
     font-size: 22px;
 }
 
 .side-bar .profile-img img {
+    position: relative;
     background-color: #00001a;
     border: 1px solid white;
     padding: 5px;
@@ -120,10 +121,12 @@ body {
 }
 
 .side-bar .menu a {
+    position: relative;
     text-decoration: none;
 }
 
 .side-bar .menu a .btn1 {
+    position: relative;
     display: block;
     width: calc(100% - 20px);
     margin: 10px;
@@ -138,13 +141,11 @@ body {
 
 .side-bar .menu a .btn1:hover {
     background-color: #DAF7A6;
-    /* font-size: 25px; */
     transform: scale(1.05);
-    /* box-shadow: 5px 6px darkkhaki; */
-    /* box-shadow:    3px 3px 5px 10px #ccc; */
 }
 
 .side-bar .menu a .btn1 .icon {
+    position: relative;
     float: left;
     margin-right: 10px;
 }
@@ -155,14 +156,13 @@ body {
 .main-area {
     position: absolute;
     color: #581845;
-    /* z-index: -1; */
+    box-sizing: border-box;
     overflow: scroll;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     background-color: #DAF7A6;
-    /* overflow: hidden; */
     width: calc(100% - 250px);
+    /* max-width: calc(100%); */
     height: calc(100% - 70px);
-    /* transform: translate(-50%    ,-50%); */
     top: 70px;
     left: 250px;
     transition-property: all;
@@ -175,8 +175,7 @@ body {
 /* main area direction buttons */
 
 .dir-button {
-    position: static;
-    /* display: inline-flex; */
+    position: sticky;
     margin: 10px;
 }
 
@@ -209,29 +208,6 @@ body {
 
 /* main area direction buttons */
 
-
-/* table tbody tr:nth-child(odd) {
-    background-color: aqua;
-    border-spacing: 0px;
-    margin: 0;
-    padding: 0;
-} */
-/* body::-webkit-scrollbar {
-    width: 1em;
-}
-
-body::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-}
-
-body::-webkit-scrollbar-thumb {
-    background-color: darkgrey;
-    outline: 1px solid slategrey;
-} */
-
-
-
-
 .subTable::-webkit-scrollbar-track {
     background: #CFD8DC;
 }
@@ -248,22 +224,11 @@ body::-webkit-scrollbar-thumb {
     padding-left: 5px;
     padding-right: 5px;
     margin: 10px;
+    width: 600px;
+    height: 500px;
     border-radius: 5px;
-    /* width: min-content; */
     position: absolute;
-    /* scrollbar-width: thin; */
-    /* scrollbar-color: var(--thumbBG) var(--scrollbarBG); */
-    /* scroll-behavior: smooth; */
-    /* scroll-margin: 5px; */
     overflow-y: scroll;
-    height: 200px;
-}
-
-thead tr {
-    position: sticky;
-    top: 0;
-    z-index: 1;
-    background: white;
 }
 
 table {
@@ -279,3 +244,23 @@ table {
     margin: 0;
     padding: 0;
 }
+
+thead tr {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background: white;
+}
+
+.attChart {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border: 2px solid black;
+    /* margin: 10px; */
+    right: 10px;
+}
+
+/* #attChart{
+    background-color: #90A4AE;
+} */
