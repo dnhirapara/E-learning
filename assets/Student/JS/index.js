@@ -24,12 +24,15 @@ $("#id_mainArea").animate({
         }, { duration: 1000, queue: false }
 */
 
+let count = 0;
 $(document).ready(function () {
     $("#id_closeBtn").click(function () {
+        count++;
+        console.log(count);
         $("#idsideBar").animate({
             width: "toggle"
         }, { duration: 1000, queue: false });
-        $("#id_mainArea").toggleClass("full-screen",5000);
+        $('#id_mainArea').toggleClass('full-screen',2000);
     });
     // $("#id_closeBtn").click(function () {
     //     $('#idsideBar').toggle("slow", function () {
