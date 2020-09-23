@@ -27,6 +27,10 @@ body {
     display: inline-block;
 }
 
+.nav-bar .line{
+    background-color: #90A4AE;
+}
+
 .nav-bar .logo h3 {
     color: white;
     text-transform: uppercase;
@@ -38,8 +42,8 @@ body {
 #id_closeBtn {
     background: none;
     border: none;
-    position: absolute;
-    font-size: 22px;
+    /* position: absolute; */
+    align-self: center;
     float: left;
     transition: .5s ease-out;
 }
@@ -50,10 +54,9 @@ body {
 
 
 .nav-bar .nav-right {
-    background: none;
+    background-color: #90A4AE;
     margin-right: 30px;
-    padding: 5px;
-    border-radius: 2px;
+    margin-left: 30px;
     text-decoration: none;
     float: right;
     border: none;
@@ -62,9 +65,9 @@ body {
 
 
 .nav-bar .btn1 {
-    top: 0px;
-    padding-left: 5px;
-    margin: 0;
+    /* top: 0px; */
+    /* padding-left: 5px; */
+    /* margin: 0; */
     background: none;
     border: none;
     transition: .5s;
@@ -87,16 +90,17 @@ body {
     background-color: #581845;
     margin-top: 70px;
     padding-top: 40px;
+    box-sizing: border-box;
     position: fixed;
     width: 250px;
     z-index: 1;
-    /* border-radius: 30px 30px 30px 30px; */
     height: 100%
 }
 
 .side-bar .profile-img {
     position: relative;
     left: calc(50% - 40px);
+    /* transform: translate(-50%,0); */
 }
 
 .side-bar .user-name {
@@ -112,8 +116,8 @@ body {
 .side-bar .profile-img img {
     position: relative;
     background-color: #00001a;
-    border: 1px solid white;
-    padding: 5px;
+    border: 5px solid white;
+    border-color: white;
     width: 80px;
     height: 80px;
     margin-bottom: 10px;
@@ -157,7 +161,8 @@ body {
     position: absolute;
     color: #581845;
     box-sizing: border-box;
-    overflow: scroll;
+    align-items: stretch;
+    overflow: auto;
     /* overflow-x: hidden; */
     background-color: #DAF7A6;
     width: calc(100% - 250px);
@@ -170,6 +175,10 @@ body {
     /* margin-top: 20px;
     top: 50%;
     left: 50%; */
+}
+.full-screen{
+    left: 0px;
+    width: 100%;
 }
 
 /* main area direction buttons */
@@ -228,7 +237,7 @@ body {
     height: 500px;
     border-radius: 5px;
     position: absolute;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 table {
@@ -264,3 +273,4 @@ thead tr {
 /* #attChart{
     background-color: #90A4AE;
 } */
+

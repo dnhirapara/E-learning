@@ -17,12 +17,19 @@
 // REF: https://www.w3schools.com/jquery/event_toggle.asp#:~:text=The%20toggle()%20method%20attaches,function%20fires%2C%20and%20so%20on.
 // REF: https://www.tutorialrepublic.com/faq/how-to-create-jquery-slide-left-and-right-toggle-effect.php
 
+/*
+$("#id_mainArea").animate({
+            left: "0px",
+            width: "100%"
+        }, { duration: 1000, queue: false }
+*/
 
 $(document).ready(function () {
     $("#id_closeBtn").click(function () {
         $("#idsideBar").animate({
             width: "toggle"
-        }, 1000);
+        }, { duration: 1000, queue: false });
+        $("#id_mainArea").toggleClass("full-screen",5000);
     });
     // $("#id_closeBtn").click(function () {
     //     $('#idsideBar').toggle("slow", function () {
