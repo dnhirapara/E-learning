@@ -27,12 +27,22 @@ $("#id_mainArea").animate({
 let count = 0;
 $(document).ready(function () {
     $("#id_closeBtn").click(function () {
-        count++;
-        console.log(count);
+        // count++;
+        // console.log(count);
+        // $('#id_mainArea').toggleClass('full-screen', 1000);
+
+        // $("#idsideBar").animate({
+        //     width: "toggle"
+        // }, 1000);
+
+        $('#id_closeBtn').toggleClass('fa-times fa-bars')
         $("#idsideBar").animate({
             width: "toggle"
-        }, { duration: 1000, queue: false });
-        $('#id_mainArea').toggleClass('full-screen',2000);
+        });
+        // $("#idsideBar").slideToggle();
+        $('#id_mainArea').toggleClass('full-screen');
+
+
     });
     // $("#id_closeBtn").click(function () {
     //     $('#idsideBar').toggle("slow", function () {
@@ -88,7 +98,7 @@ var myChart = new Chart(ctx, {
         }]
     },
     options: {
-        duration: 50000,
+        duration: 1000,
     }
 });
 /* chartjs Attendence Chart */

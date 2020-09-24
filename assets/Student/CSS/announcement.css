@@ -1,0 +1,51 @@
+@import url('style.css');
+
+.notice-card {
+    margin: 5px;
+    background-color: blueviolet;
+    border: 2px solid black;
+    height: 150px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.notice-header {
+    display: flex;
+    /* background-color: bisque; */
+    box-sizing: border-box;
+    border-radius: 10px 10px 0px 0px;
+    margin: 1px;
+    padding: 10px;
+    width: 100%;
+}
+.notice-author #name{
+    font-family: 'Courier New', Courier, monospace;
+    /* background-color: aquamarine; */
+    display: block;
+}
+.notice-author #role {
+    /* float: right; */
+}
+
+.notice-author #role {
+    display: block;
+    font-size: smaller;
+    /* color: green; */
+}
+
+.notice-title{
+    /* display: inline; */
+    position: relative;
+    /* left:100%; */
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    display: grid;
+    /* background-color: brown; */
+}
+.notice-date {
+
+}
+.notice-date #date{
+    display: block;
+}

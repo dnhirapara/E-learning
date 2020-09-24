@@ -27,7 +27,7 @@ body {
     display: inline-block;
 }
 
-.nav-bar .line{
+.nav-bar .line {
     background-color: #90A4AE;
 }
 
@@ -97,11 +97,6 @@ body {
     height: 100%
 }
 
-.side-bar .profile-img {
-    position: relative;
-    left: calc(50% - 40px);
-    /* transform: translate(-50%,0); */
-}
 
 .side-bar .user-name {
     position: relative;
@@ -116,6 +111,7 @@ body {
 .side-bar .profile-img img {
     position: relative;
     background-color: #00001a;
+    left: calc(50% - 40px);
     border: 5px solid white;
     border-color: white;
     width: 80px;
@@ -170,15 +166,24 @@ body {
     height: calc(100% - 70px);
     top: 70px;
     left: 250px;
-    transition-property: all;
-    transition: .5s;
+    transition-property: width, left;
+    transition-delay: .1s;
+    transition-duration: .5s;
     /* margin-top: 20px;
     top: 50%;
     left: 50%; */
 }
-.full-screen{
+
+.full-screen {
     left: 0px;
     width: 100%;
+    transition-property: width, left;
+    /* transition-delay: .1s; */
+    transition-duration: .5s;
+}
+
+.hide-side-bar {
+    width: 0%;
 }
 
 /* main area direction buttons */
@@ -217,60 +222,7 @@ body {
 
 /* main area direction buttons */
 
-.subTable::-webkit-scrollbar-track {
-    background: #CFD8DC;
-}
-
-.subTable::-webkit-scrollbar-thumb {
-    background-color: #90A4AE;
-    border-radius: 20px;
-    border: 3px solid #CFD8DC;
-}
-
-.subTable {
-    box-sizing: border-box;
-    border: 1px solid darkblue;
-    padding-left: 5px;
-    padding-right: 5px;
-    margin: 10px;
-    width: 600px;
-    height: 500px;
-    border-radius: 5px;
-    position: absolute;
-    overflow-y: auto;
-}
-
-table {
-    position: relative;
-    margin: 10px;
-    z-index: 1;
-    text-transform: capitalize;
-    color: black;
-    border-collapse: collapse;
-    border-spacing: 0px;
-    table-layout: fixed;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-thead tr {
-    position: sticky;
-    top: 0;
-    z-index: 1;
-    background: white;
-}
-
-.attChart {
-    position: absolute;
-    width: 500px;
-    height: 500px;
-    border: 2px solid black;
-    /* margin: 10px; */
-    right: 10px;
-}
 
 /* #attChart{
     background-color: #90A4AE;
 } */
-

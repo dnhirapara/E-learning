@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-color: #00001a;
     background-size: 100% 100%;
@@ -6,87 +11,98 @@ body {
     color: #ffffff;
     font-size: 24px;
 }
-#title{
+
+#title {
     /* position: fixed; */
     height: 50px;
     padding-top: 20px;
+    /* background-color: aqua; */
     vertical-align: middle;
     margin: auto;
     text-align: center;
     border-bottom: 5px solid orange;
 }
-.form-grid{
+
+.form-grid {
     position: relative;
-    margin: 20px;
     /* background-color: aqua; */
     width: 900px;
     height: 500px;
     margin: 50px auto;
     align-items: center;
 }
-.form-grid .login-box{
+
+.form-grid .login-box {
     top: 50%;
     left: calc(50% - 310px);
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     align-items: center;
     /* margin: auto; */
     margin: 10px;
     position: relative;
     width: calc(300px - 30px);
     float: left;
-    border: 5px solid orange;
+    border: 1px solid orange;
     border-radius: 25px;
     height: 400px;
 }
-.form-grid .login-box .icon{
-    position: absolute;
+
+.form-grid .login-box .icon {
+    position: relative;
+    /* position: absolute; */
     top: 0;
     left: 0;
-    border-radius: 20px;
+    border-radius: 25px;
     width: 100%;
-    background:#cf8b0e;
+    background: #cf8b0e;
     height: 100%;
     transition: .5s;
     z-index: 1;
 }
-.icon{
+
+.icon {
     position: absolute;
     text-align: center;
 }
 
-.form-grid .login-box:hover .icon,.form-grid .login-box:focus-within .icon{
+.form-grid .login-box:hover .icon,
+.form-grid .login-box:focus-within .icon {
     top: -40px;
     left: calc(50% - 40px);
     width: 80px;
     height: 80px;
     border-radius: 50%;
 }
-.form-grid .login-box .icon .fas{
+
+.form-grid .login-box .icon .fas {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     font-size: 80px;
     transition: .5s;
     color: #000;
 }
+
 .form-grid .login-box:hover .icon .fas,
-.form-grid .login-box:focus-within .icon .fas{
+.form-grid .login-box:focus-within .icon .fas {
     font-size: 40px;
 }
 
-.form-box{
+.form-box {
     width: 250px;
     top: 50%;
     left: 50%;
-    transform: translate(-50% ,-50%);
+    transform: translate(-50%, -50%);
     position: absolute;
     text-align: center;
 }
-.form-box h1{
+
+.form-box h1 {
     font-size: 30px;
 }
-.form-box .textbox{
+
+.form-box .textbox {
     position: relative;
     width: 100%;
     padding: 2px 0px;
@@ -94,7 +110,9 @@ body {
     border-bottom: 2px solid goldenrod;
     transition: .5s;
 }
-.form-box input[type="text"],input[type="password"]{
+
+.form-box input[type="text"],
+input[type="password"] {
     width: 80%;
     border: none;
     top: 20px;
@@ -104,22 +122,26 @@ body {
     font-size: 25px;
     transition: .5s;
 }
-.form-box .textbox:hover{
-    border-color: blue;
+
+.form-box .textbox:hover {
+    border-color: green;
 }
-.textbox i{
+
+.textbox i {
     width: 15px;
     padding-left: 2px;
     float: left;
 }
-.form-box .textbox:focus-within i{
-    color: blue;
+
+.form-box .textbox:focus-within i {
+    color: green;
 }
-.submit-btn .btn1{
+
+.submit-btn .btn1 {
     /* width: 80px; */
     box-sizing: border-box;
     font-size: 22px;
-    background-color:#cf8b0e;
+    background-color: #cf8b0e;
     border: 1px solid orange;
     border-radius: 20px;
     /* border-color: orange; */
@@ -128,7 +150,8 @@ body {
     padding: 10px;
     transition: .5s;
 }
-.submit-btn .btn1:hover{
+
+.submit-btn .btn1:hover {
     box-shadow: 0px 0px 32px 8px rgb(18, 20, 20), 0px 0px 4px 1px rgb(18, 20, 20) inset;
-    background-color:#cf8b0e;
+    background-color: #cf8b0e;
 }

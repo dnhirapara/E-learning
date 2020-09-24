@@ -58,7 +58,7 @@
         </div> -->
         <!-- <i class="fas fa-bars"></i> -->
         <div class="profile-img">
-            <img src="../assets/Images/user.svg">
+            <img src="https://www.pngitem.com/pimgs/m/130-1300253_female-user-icon-png-download-user-image-color.png">
         </div>
         <!-- <center> -->
         <div class="user-name">
@@ -167,6 +167,71 @@
 
 </body>
 <!-- linking -->
+<style>
+    .subTable::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    /* Track */
+    .subTable::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px grey;
+        border-radius: 10px;
+    }
+
+    /* Handle */
+    .subTable::-webkit-scrollbar-thumb {
+        background: purple;
+        border-radius: 10px;
+    }
+
+    /* Handle on hover */
+    .subTable::-webkit-scrollbar-thumb:hover {
+        background: purple;
+    }
+
+    .subTable {
+        box-sizing: border-box;
+        border: 1px solid darkblue;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin: 10px;
+        width: 600px;
+        height: 500px;
+        border-radius: 5px;
+        position: absolute;
+        overflow-y: auto;
+    }
+
+    table {
+        position: relative;
+        margin: 10px;
+        z-index: 1;
+        text-transform: capitalize;
+        color: black;
+        border-collapse: collapse;
+        border-spacing: 0px;
+        table-layout: fixed;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    thead tr {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        background: white;
+    }
+
+    .attChart {
+        position: absolute;
+        width: 500px;
+        height: 500px;
+        border: 2px solid black;
+        /* margin: 10px; */
+        right: 10px;
+    }
+</style>
 <!-- static files -->
 <script src="../assets/Student/JS/index.js"></script>
 <!-- static files end -->
