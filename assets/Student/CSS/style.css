@@ -92,7 +92,7 @@ body {
     padding-top: 40px;
     box-sizing: border-box;
     position: fixed;
-    width: 250px;
+    width: 200px;
     z-index: 1;
     height: 100%
 }
@@ -161,11 +161,11 @@ body {
     overflow: auto;
     /* overflow-x: hidden; */
     background-color: #DAF7A6;
-    width: calc(100% - 250px);
+    width: calc(100% - 200px);
     /* max-width: calc(100%); */
     height: calc(100% - 70px);
     top: 70px;
-    left: 250px;
+    left: 200px;
     transition-property: width, left;
     transition-delay: .1s;
     transition-duration: .5s;
@@ -221,8 +221,3 @@ body {
 }
 
 /* main area direction buttons */
-
-
-/* #attChart{
-    background-color: #90A4AE;
-} */

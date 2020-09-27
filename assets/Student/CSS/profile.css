@@ -1,0 +1,36 @@
+@import url('style.css');
+
+.porfile-header {
+    /* position: absolute; */
+    height: 200px;
+    margin: 10px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+}
+
+.student-img {
+    position: relative;
+    border: 5px solid white;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    /* bottom: -100px; */
+    z-index: 1;
+}
+
+.student-img img {
+    position: relative;
+    width: 200px;
+    border-radius: 50%;
+    height: 200px;
+}
+
+.profile-name{
+    position: relative;
+    width: 500px;
+    height: 20px;
+    top: 100px;
+    background-color: aqua;
+}

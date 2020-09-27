@@ -1,36 +1,21 @@
+"use strict";
+
 // REF: https://www.w3schools.com/jquery/event_toggle.asp#:~:text=The%20toggle()%20method%20attaches,function%20fires%2C%20and%20so%20on.
 // REF: https://www.tutorialrepublic.com/faq/how-to-create-jquery-slide-left-and-right-toggle-effect.php
-
-let count = 0;
+var count = 0;
 $(document).ready(function () {
-    $("#id_closeBtn").click(function () {
-        $('#id_closeBtn').toggleClass('fa-times fa-bars')
-        $("#idsideBar").animate({
-            width: "toggle"
-        });
-        $('#id_mainArea').toggleClass('full-screen');
-
-
+  $("#id_closeBtn").click(function () {
+    $('#id_closeBtn').toggleClass('fa-times fa-bars');
+    $("#idsideBar").animate({
+      width: "toggle"
     });
-    for (var i = 0; i < 30; i++) {
-        $("#id_subTable").find('tbody')
-            .append($('<tr>')
-                .append($('<td>')
-                    .append(i)
-                )
-                .append($('<td>')
-                    .append("Subject" + i)
-                )
-                .append($('<td>')
-                    .append("Faculty" + i)
-                )
-                .append($('<td>')
-                    .append("Complete" + i)
-                )
-            );
-    }
-});
+    $('#id_mainArea').toggleClass('full-screen');
+  });
 
+  for (var i = 0; i < 30; i++) {
+    $("#id_subTable").find('tbody').append($('<tr>').append($('<td>').append(i)).append($('<td>').append("Subject" + i)).append($('<td>').append("Faculty" + i)).append($('<td>').append("Complete" + i)));
+  }
+});
 /* chartjs Attendence Chart */
 // var ctx = document.getElementById('attChart').getContext('2d');
 // var myChart = new Chart(ctx, {
@@ -57,4 +42,5 @@ $(document).ready(function () {
 //         duration: 1000,
 //     }
 // });
+
 /* chartjs Attendence Chart */

@@ -35,7 +35,7 @@
     <!-- nav-bar -->
     <div class="nav-bar">
         <div class="line">
-            <h3><i class="fas fa-times nav-btn" id="id_closeBtn"></i></h3>
+            <h3><i class="fas fa-times nav-btn" id="id_closeBtn">X</i></h3>
             <div class="logo">
                 <h3>E-Learning</h3>
                 <!-- <button class="nav-btn"> -->
@@ -144,97 +144,108 @@
             </div>
         </div> -->
         <div class="subTable">
-            <table id="id_subTable" class="sticky-header">
-                <thead>
-                    <tr>
-                        <td>Id</td>
-                        <td>Subject</td>
-                        <td>Faculty</td>
-                        <td>Complete</td>
-                    </tr>
-                </thead>
-                <tbody id="id_subTableBody">
+            <div class="title">
+                <p>Subjects</p>
+            </div>
+            <div class="table">
+                <table id="id_subTable" class="sticky-header">
+                    <thead>
+                        <tr>
+                            <td>Id</td>
+                            <td>Subject</td>
+                            <td>Faculty</td>
+                            <td>Complete</td>
+                        </tr>
+                    </thead>
+                    <tbody id="id_subTableBody" class="tableData">
 
-                </tbody>
-            </table>
+                    </tbody>
+                </table>
+            </div>
         </div>
-        <div class="attChart">
+        <!-- <div class="attChart">
             <canvas id="attChart">
             </canvas>
-        </div>
+        </div> -->
     </div>
     <!-- Main area ends -->
 
 </body>
 <!-- linking -->
 <style>
-    .subTable::-webkit-scrollbar {
+    .table::-webkit-scrollbar {
         width: 10px;
     }
 
     /* Track */
-    .subTable::-webkit-scrollbar-track {
+    .table::-webkit-scrollbar-track {
         box-shadow: inset 0 0 5px grey;
         border-radius: 10px;
     }
 
     /* Handle */
-    .subTable::-webkit-scrollbar-thumb {
+    .table::-webkit-scrollbar-thumb {
         background: purple;
         border-radius: 10px;
     }
 
     /* Handle on hover */
-    .subTable::-webkit-scrollbar-thumb:hover {
+    .table::-webkit-scrollbar-thumb:hover {
         background: purple;
     }
 
     .subTable {
         box-sizing: border-box;
         border: 1px solid darkblue;
-        padding-left: 5px;
-        padding-right: 5px;
+        /* padding-left: 5px; */
+        /* padding-right: 5px; */
         margin: 10px;
-        width: 600px;
-        height: 500px;
+        width: auto;
+        height: min-content;
         border-radius: 5px;
         position: absolute;
+    }
+
+    .subTable .title {
+        position: relative;
+        height: auto;
+        background-color: gray;
+    }
+
+    .subTable .table {
+        box-sizing: border-box;
+        position: relative;
+        background-color: blueviolet;
         overflow-y: auto;
+        overflow-x: auto;
+        width: 600px;
+        min-height: 200px;
+        max-height: 500px;
     }
 
     table {
+        margin: 0;
+        padding: 0;
         position: relative;
-        margin: 10px;
+        /* margin: 10px; */
         z-index: 1;
-        text-transform: capitalize;
         color: black;
         border-collapse: collapse;
         border-spacing: 0px;
         table-layout: fixed;
         width: 100%;
-        margin: 0;
-        padding: 0;
     }
 
-    thead tr {
+    thead{
+        text-transform: capitalize;
+        position: -webkit-sticky;
         position: sticky;
         top: 0;
-        z-index: 1;
-        background: white;
-    }
-
-    .attChart {
-        position: absolute;
-        width: 500px;
-        height: 500px;
-        border: 2px solid black;
-        /* margin: 10px; */
-        right: 10px;
     }
 </style>
 <!-- static files -->
-<script src="../assets/Student/JS/index.js"></script>
 <!-- static files end -->
+<script src="../assets/Student/JS/index.js"></script>
 <!-- linking end -->
 
 </html>
