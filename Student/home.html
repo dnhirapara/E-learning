@@ -35,7 +35,7 @@
     <!-- nav-bar -->
     <div class="nav-bar">
         <div class="line">
-            <h3><i class="fas fa-times nav-btn" id="id_closeBtn">X</i></h3>
+            <i class="fas fa-times nav-btn" id="id_closeBtn" onclick="fullScreen()"></i>
             <div class="logo">
                 <h3>E-Learning</h3>
                 <!-- <button class="nav-btn"> -->
@@ -52,7 +52,7 @@
     <!-- nav-bar ends -->
 
     <!-- side-bar -->
-    <div class="side-bar" id="idsideBar">
+    <div class="side-bar" id="id_sideBar">
         <!-- <div class="menu-btn">
             <i class="fas fa-times" id="id_closeBtn"></i>
         </div> -->
@@ -123,8 +123,10 @@
                 </button>
             </a>
         </div>
+        <button class="side-close">&lt;</button>
     </div>
     <!-- side-bar ends -->
+
 
     <!-- Main area -->
     <div class="main-area" id="id_mainArea">
@@ -236,7 +238,7 @@
         width: 100%;
     }
 
-    thead{
+    thead {
         text-transform: capitalize;
         position: -webkit-sticky;
         position: sticky;
@@ -245,7 +247,22 @@
 </style>
 <!-- static files -->
 <!-- static files end -->
-<script src="../assets/Student/JS/index.js"></script>
+<script>
+    let cnt = 1;
+
+    function fullScreen() {
+        if (cnt === 1) {
+            document.getElementById("id_mainArea").style.marginLeft = "200px";
+            document.getElementById("id_sideBar").style.width = "200px";
+            cnt = 0;
+        } else {
+            document.getElementById("id_mainArea").style.marginLeft = "40px";
+            document.getElementById("id_sideBar").style.width = "40px";
+            cnt = 1;
+        }
+    }
+</script>
+<!-- <script src="../assets/Student/JS/index.js"></script> -->
 <!-- linking end -->
 
 </html>
