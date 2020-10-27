@@ -5,10 +5,8 @@
 var count = 0;
 $(document).ready(function () {
   $("#id_closeBtn").click(function () {
-    $('#id_closeBtn').toggleClass('fa-times fa-bars');
-    $("#idsideBar").animate({
-      width: "toggle"
-    });
+    $(this).toggleClass('fa-bars fa-times');
+    $('#id_sideBar').toggleClass('hide-side-bar');
     $('#id_mainArea').toggleClass('full-screen');
   });
 

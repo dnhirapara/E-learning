@@ -4,13 +4,9 @@
 let count = 0;
 $(document).ready(function () {
     $("#id_closeBtn").click(function () {
-        $('#id_closeBtn').toggleClass('fa-times fa-bars')
-        $("#idsideBar").animate({
-            width: "toggle"
-        });
-        $('#id_mainArea').toggleClass('full-screen');
-
-
+        $(this).toggleClass('fa-bars fa-times');
+       $('#id_sideBar').toggleClass('hide-side-bar');
+       $('#id_mainArea').toggleClass('full-screen');
     });
     for (var i = 0; i < 30; i++) {
         $("#id_subTable").find('tbody')

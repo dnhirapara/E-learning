@@ -41,7 +41,7 @@ body {
 
 #id_closeBtn {
     /* background: none; */
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
     border: none;
     font-size: 22px;
     /* position: absolute; */
@@ -114,14 +114,16 @@ body {
 
 .side-bar .profile-img img {
     position: relative;
+    box-sizing: border-box;
     background-color: #00001a;
-    left: calc(50% - 40px);
+    left: 50%;
+    transform: translateX(-50%);
     border: 5px solid white;
     border-color: white;
     width: 80px;
     height: 80px;
-    margin-bottom: 10px;
     border-radius: 50%;
+    /* margin-bottom: 10px; */
 }
 
 .side-bar .menu {
@@ -138,7 +140,7 @@ body {
     display: block;
     width: calc(100% - 20px);
     margin: 10px;
-    height: 50px;
+    height: 40px;
     margin-bottom: 10px;
     border-radius: 10px;
     text-align: start;
@@ -190,15 +192,16 @@ body {
     width: 40;
     position: absolute;
     z-index: 1;
-    /* top: 50%; */
+    top: 50%;
 }
 
 .full-screen {
-    left: 0;
+    left: 200px;
+    width: calc(100% - 200px);
 }
 
 .hide-side-bar {
-    width: 0%;
+    width: 200px;
 }
 
 /* main area direction buttons */

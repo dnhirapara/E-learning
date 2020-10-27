@@ -35,7 +35,8 @@
     <!-- nav-bar -->
     <div class="nav-bar">
         <div class="line">
-            <i class="fas fa-times nav-btn" id="id_closeBtn" onclick="fullScreen()"></i>
+            <!-- <i class="fas fa-times nav-btn" id="id_closeBtn" onclick="fullScreen()"></i> -->
+            <i class="fas fa-times nav-btn" id="id_closeBtn"></i>
             <div class="logo">
                 <h3>E-Learning</h3>
                 <!-- <button class="nav-btn"> -->
@@ -123,7 +124,6 @@
                 </button>
             </a>
         </div>
-        <button class="side-close">&lt;</button>
     </div>
     <!-- side-bar ends -->
 
@@ -153,6 +153,7 @@
                 <table id="id_subTable" class="sticky-header">
                     <thead>
                         <tr>
+
                             <td>Id</td>
                             <td>Subject</td>
                             <td>Faculty</td>
@@ -247,7 +248,7 @@
 </style>
 <!-- static files -->
 <!-- static files end -->
-<script>
+<!-- <script>
     let cnt = 1;
 
     function fullScreen() {
@@ -256,13 +257,13 @@
             document.getElementById("id_sideBar").style.width = "200px";
             cnt = 0;
         } else {
-            document.getElementById("id_mainArea").style.marginLeft = "40px";
-            document.getElementById("id_sideBar").style.width = "40px";
+            document.getElementById("id_mainArea").style.marginLeft = "0";
+            document.getElementById("id_sideBar").style.width = "0px";
             cnt = 1;
         }
     }
-</script>
-<!-- <script src="../assets/Student/JS/index.js"></script> -->
+</script> -->
+<script src="../assets/Student/JS/index.js"></script>
 <!-- linking end -->
 
 </html>
